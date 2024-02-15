@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(2, 8, 23);
+}
+
+.phone_main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone_main .phone_card {
+  width: 295px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/iphone1.png");
+}
+.phone_main .phone_card1 {
+  width: 295px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/besFon.png");
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.phone_main .phone_card1 .phone_card1_item {
+  width: 90.5%;
+  height: 96%;
+  margin-left: 15px;
+  margin-top: 12px;
+  background-color: rgba(0, 0, 0, 0.728);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.phone_main .phone_card1 .phone_card1_item .phone_card1_item_root {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.phone_main .phone_card1 .phone_card1_item .phone_card1_item_root p {
+  font-size: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.phone_main .phone_card1 .phone_card1_item .phone_card1_item_root p:hover {
+  opacity: 0.8;
+}
+.phone_main .phone_card1 .phone_card1_item p {
+  font-size: 45px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+.phone_main .phone_card1 .phone_card1_item span {
+  position: absolute;
+  top: 80px;
+  color: rgb(255, 255, 255);
+  left: 20px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.phone_main .phone_card1 .phone_card1_item .time1 {
+  top: 15px;
+  left: 25px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.phone_main .phone_card1 .phone_card1_item1 {
+  width: 90.5%;
+  height: 96%;
+  margin-left: 15px;
+  margin-top: 12px;
+  background-color: rgba(0, 0, 0, 0.728);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: none;
+}
+.phone_main .phone_card1 .phone_card1_item1 .phone_card1_item_root {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.phone_main .phone_card1 .phone_card1_item1 .phone_card1_item_root p {
+  font-size: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.phone_main .phone_card1 .phone_card1_item1 .phone_card1_item_root p:hover {
+  opacity: 0.8;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock {
+  width: 100%;
+  height: 150px;
+  margin-top: 90px;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_min {
+  margin: 0 auto;
+  width: 75%;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_min div {
+  height: 100%;
+  width: 45%;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_min div label {
+  color: white;
+  font-family: sans-serif;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  display: block;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_min div input {
+  width: 80%;
+  height: 70%;
+  font-size: 20px;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_min div input[type=number]::-webkit-outer-spin-button,
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_min div input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_btns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-evenly;
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_btns .stop {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(28, 28, 31);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(94, 94, 99);
+}
+.phone_main .phone_card1 .phone_card1_item1 .tymer_clock .tymer_btns .start {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(9, 41, 17);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(43, 186, 79);
+}
+.phone_main .phone_card1 .phone_card1_item1 p {
+  font-family: sans-serif;
+  color: white;
+}
+.phone_main .phone_card1 .phone_card1_item1 span {
+  position: absolute;
+  top: 80px;
+  color: rgb(255, 255, 255);
+  left: 20px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.phone_main .phone_card1 .phone_card1_item1 .time2 {
+  top: 15px;
+  left: 25px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.phone_main .phone_card1 .phone_card1_item2 {
+  width: 90.5%;
+  height: 96%;
+  margin-left: 15px;
+  margin-top: 12px;
+  background-color: rgba(0, 0, 0, 0.728);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: none;
+}
+.phone_main .phone_card1 .phone_card1_item2 .phone_card1_item_root {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.phone_main .phone_card1 .phone_card1_item2 .phone_card1_item_root p {
+  font-size: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.phone_main .phone_card1 .phone_card1_item2 .phone_card1_item_root p:hover {
+  opacity: 0.8;
+}
+.phone_main .phone_card1 .phone_card1_item2 .tymer_clock {
+  width: 100%;
+  height: 150px;
+  margin-top: 90px;
+}
+.phone_main .phone_card1 .phone_card1_item2 .tymer_clock .budinlik {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.phone_main .phone_card1 .phone_card1_item2 .tymer_clock .budinlik input {
+  width: 60%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.368);
+  color: white;
+}
+.phone_main .phone_card1 .phone_card1_item2 .tymer_clock .tymer_btns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-evenly;
+}
+.phone_main .phone_card1 .phone_card1_item2 .tymer_clock .tymer_btns .stop1 {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(28, 28, 31);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(94, 94, 99);
+}
+.phone_main .phone_card1 .phone_card1_item2 .tymer_clock .tymer_btns .start1 {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(9, 41, 17);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(43, 186, 79);
+}
+.phone_main .phone_card1 .phone_card1_item2 p {
+  font-family: sans-serif;
+  color: white;
+}
+.phone_main .phone_card1 .phone_card1_item2 span {
+  position: absolute;
+  top: 80px;
+  color: rgb(255, 255, 255);
+  left: 20px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.phone_main .phone_card1 .phone_card1_item2 .time3 {
+  top: 15px;
+  left: 25px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.phone_main .phone_card1.active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.time {
+  display: inline-block;
+  font-family: sans-serif;
+  color: white;
+  font-size: 12px;
+  margin: 25px 0 0 50px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.apps {
+  width: 76%;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.apps .kril,
+.apps .conva {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+.apps .calendar {
+  width: 40px;
+  height: 40px;
+}
+.apps .clock {
+  width: 40px;
+  height: 40px;
+}
