@@ -243,13 +243,106 @@
           </div>
         </div>
       </div>
+      <div class="trnaslate">
+        <div class="trnalate_w">
+          <span class="time4">ds</span>
+          <span class="close" onclick="close1()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M10 21.308L.692 12L10 2.692l1.063 1.064L2.82 12l8.244 8.244z"
+              />
+            </svg>
+          </span>
+          <div class="texta">
+            <span>
+              <p>Translate</p>
+              <div class="translatebtn">
+                <button class="lotinbtn" onclick="lotonH()">Lotin</button>
+                <button class="kirlbtn" onclick="krilH()">Kril</button>
+              </div>
+            </span>
+            <textarea id="textarea1" cols="30" rows="10"></textarea>
+            <textarea id="textarea2" cols="30" rows="10" disabled></textarea>
+            <div class="delete_to_">
+              <div class="delete" onclick="deletet()">
+                <svg
+                  id="Capa_1"
+                  enable-background="new 0 0 320.941 320.941"
+                  height="18"
+                  viewBox="0 0 320.941 320.941"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m290.853 40.118h-181.049c-9.06 0-17.551 4.016-23.301 11.038l-84.241 102.968c-3.017 3.692-3.017 9.001 0 12.693l84.251 102.978c5.739 7.013 14.231 11.028 23.291 11.028h181.048c16.592 0 30.088-13.497 30.088-30.088v-180.529c.001-16.592-13.496-30.088-30.087-30.088zm10.029 210.617c0 5.534-4.496 10.029-10.029 10.029h-181.049c-3.026 0-5.857-1.342-7.767-3.673l-79.05-96.621 79.04-96.611c1.92-2.341 4.75-3.683 7.777-3.683h181.048c5.534 0 10.029 4.496 10.029 10.029.001.001.001 180.53.001 180.53z"
+                  ></path>
+                  <path
+                    d="m223.585 103.232-43.056 43.056-43.056-43.056-14.182 14.182 43.056 43.056-43.056 43.056 14.182 14.182 43.056-43.056 43.056 43.056 14.182-14.182-43.056-43.056 43.056-43.056z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="copy" onclick="copy()">
+                <svg
+                  height="18pt"
+                  viewBox="-40 0 512 512"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m271 512h-191c-44.113281 0-80-35.886719-80-80v-271c0-44.113281 35.886719-80 80-80h191c44.113281 0 80 35.886719 80 80v271c0 44.113281-35.886719 80-80 80zm-191-391c-22.054688 0-40 17.945312-40 40v271c0 22.054688 17.945312 40 40 40h191c22.054688 0 40-17.945312 40-40v-271c0-22.054688-17.945312-40-40-40zm351 261v-302c0-44.113281-35.886719-80-80-80h-222c-11.046875 0-20 8.953125-20 20s8.953125 20 20 20h222c22.054688 0 40 17.945312 40 40v302c0 11.046875 8.953125 20 20 20s20-8.953125 20-20zm0 0"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toLow">
+        <div class="tolow_item">
+          <span class="time5"></span>
+          <span class="close" onclick="close2()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M10 21.308L.692 12L10 2.692l1.063 1.064L2.82 12l8.244 8.244z"
+              />
+            </svg>
+          </span>
+          <div class="kattah">
+            <div class="kattah_w">
+              <div class="kattah_wbtn">
+                <button id="A">A</button>
+                <button id="a">a</button><button id="aa">Aa</button>
+              </div>
+              <textarea id="textarea_one" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="phone_card">
         <div class="time"></div>
         <div class="apps">
           <img src="./img/notes.png" alt="" class="calendar" />
           <img src="./img/clock.png" alt="" class="clock" onclick="clock()" />
-          <img src="./img/case-converter.jpg" alt="" class="conva" />
-          <img src="./img/krilL.png" alt="" class="kril" />
+          <img
+            src="./img/translate-removebg-preview.png"
+            alt=""
+            class="conva"
+            onclick="close1()"
+          />
+          <img src="./img/krilL.png" alt="" onclick="close2()" class="kril" />
         </div>
       </div>
     </div>
