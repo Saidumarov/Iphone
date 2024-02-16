@@ -374,3 +374,12 @@ textarea_one.addEventListener("input", (e) => {
     textarea_one.value = value2 + value3;
   });
 });
+
+// battary
+let batarty = document.querySelector(".batarty");
+let batteryPromise = navigator.getBattery();
+setInterval(() => {
+  batteryPromise.then((batteryObject) => {
+    batarty.innerHTML = Math.trunc(batteryObject.level * 100) + "%";
+  });
+}, 1000);

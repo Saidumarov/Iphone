@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("../img/iphone1.png");
+    position: relative;
   }
   .phone_card1 {
     width: 295px;
@@ -554,4 +555,13 @@ img {
     background-color: rgba(0, 0, 0, 0.267);
     color: rgba(255, 255, 255, 0.753);
   }
+}
+
+.batarty {
+  color: rgb(82, 82, 82);
+  position: absolute;
+  right: 36px;
+  top: 29px;
+  font-size: 10px;
+  font-weight: bold;
 }
