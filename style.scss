@@ -565,3 +565,39 @@ img {
   font-size: 10px;
   font-weight: bold;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  background-color: #6f00ff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 0.875rem;
+  height: 38px;
+  width: 120px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.rek {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  top: 70px;
+  z-index: 2;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -86,18 +86,6 @@ const startTimer = () => {
   minutes = isNaN(minutes) ? 0 : minutes;
   seconds = isNaN(seconds) ? 0 : seconds;
 
-  // If seconds exceed 60, set them to 59
-  if (seconds > 59) {
-    secound.value = 59;
-    seconds = 59;
-  }
-
-  // If minutes exceed 60, set them to 59
-  if (minutes > 60) {
-    minut.value = 59;
-    minutes = 59;
-  }
-
   let totalSeconds = minutes * 60 + seconds;
 
   timerInterval = setInterval(() => {
@@ -106,6 +94,7 @@ const startTimer = () => {
       audio.play();
     } else {
       totalSeconds--;
+      console.log(totalSeconds);
       let remainingMinutes = Math.floor(totalSeconds / 60);
       let remainingSeconds = totalSeconds % 60;
       secound.value = remainingSeconds;
@@ -275,9 +264,7 @@ let lotin = {
   sh: "ш",
   sch: "щ",
   "": "",
-  y: "ы",
-  "": "",
-  e: "э",
+  e: "e",
   yu: "ю",
   ya: "я",
   A: "А",
@@ -307,9 +294,6 @@ let lotin = {
   Ch: "Ч",
   Sh: "Ш",
   Sch: "Щ",
-  "": "",
-  Y: "Ы",
-  "": "",
   E: "Э",
   Yu: "Ю",
   Ya: "Я",
